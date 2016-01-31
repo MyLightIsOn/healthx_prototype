@@ -1,13 +1,17 @@
 .navItemsContainer {
+    width: 80%;
+    margin: 0 !important;
+
     background-color: @white;
     position: absolute;
     right: 100%;
-    width: 100%;
 
-    transition: all 1s;
+    transition-property: right;
+    transition-duration: 0.4s;
 }
 
-.active {
-    right: 0;
-    transition: all 1s;
+.navItemsContainer.active {
+    right: 20%;
+    transition-property: right;
+    transition-duration: 0.4s;
 }

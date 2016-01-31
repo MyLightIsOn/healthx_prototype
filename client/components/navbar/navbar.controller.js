@@ -21,6 +21,7 @@ class NavbarController {
 		$scope.isActive = false;
 		$scope.activeButton = function() {
 			$scope.isActive = !$scope.isActive;
+			$scope.$emit('navClicked', $scope.isActive);
 		}
 	}
 }

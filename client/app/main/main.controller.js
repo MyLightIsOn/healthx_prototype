@@ -16,6 +16,13 @@ class MainController {
     $scope.$on('$destroy', function() {
       socket.unsyncUpdates('thing');
     });
+
+    $scope.isActive = true;
+    $scope.$on("navClicked", function (event, args) {
+      if(args = true){
+        $scope.isActive = !$scope.isActive
+      }
+    });
   }
 
   addThing() {
