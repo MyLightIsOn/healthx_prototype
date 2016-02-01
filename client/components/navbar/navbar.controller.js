@@ -2,29 +2,23 @@
 
 class NavbarController {
 	//start-non-standard
-	menu = [{
-		'title': 'Home',
-		'state': 'main'
-	}, {
-		'title': 'Profile Info',
-		'state': 'main'
-	}];
 
 	isCollapsed = false;
 	//end-non-standard
 
-	constructor(Auth, $scope) {
+	constructor(Auth, MenuService, $scope) {
 		this.isLoggedIn = Auth.isLoggedIn;
 		this.isAdmin = Auth.isAdmin;
 		this.getCurrentUser = Auth.getCurrentUser;
+		this.menu = MenuService.mainMenu()
 
 		$scope.isActive = false;
 		$scope.activeButton = function() {
 			$scope.isActive = !$scope.isActive;
 			$scope.$emit('navClicked', $scope.isActive);
-		}
+		};
 	}
 }
 
-angular.module('healthxApp')
+angular.module('healthxApp.navbar')
 	.controller('NavbarController', NavbarController);

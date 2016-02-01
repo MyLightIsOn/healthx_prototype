@@ -4,6 +4,7 @@ angular.module('healthxApp', [
   'healthxApp.auth',
   'healthxApp.admin',
   'healthxApp.constants',
+  'healthxApp.navbar',
   'ngCookies',
   'ngResource',
   'ngSanitize',
