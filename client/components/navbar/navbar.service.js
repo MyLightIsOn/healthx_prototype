@@ -15,6 +15,18 @@
 				}];
 
 				return menuItems
+			},
+
+			subMenu() {
+				var menuItems = [{
+					'title': 'Home2',
+					'state': 'main'
+				}, {
+					'title': 'Profile Info2',
+					'state': 'main'
+				}];
+
+				return menuItems
 			}
 
 		};

@@ -17,10 +17,11 @@ class MainController {
       socket.unsyncUpdates('thing');
     });
 
-    $scope.isActive = true;
+    $scope.isActive = false;
+
     $scope.$on("navClicked", function (event, args) {
       if(args = true){
-        $scope.isActive = !$scope.isActive
+        $scope.isActive = true
       }
     });
   }

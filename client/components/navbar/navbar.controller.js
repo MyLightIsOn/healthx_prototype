@@ -10,12 +10,26 @@ class NavbarController {
 		this.isLoggedIn = Auth.isLoggedIn;
 		this.isAdmin = Auth.isAdmin;
 		this.getCurrentUser = Auth.getCurrentUser;
-		this.menu = MenuService.mainMenu()
+		this.menu = MenuService.mainMenu();
+		this.subMenu = MenuService.subMenu();
 
-		$scope.isActive = false;
+		$scope.navActive = false;
+
+
+		/**
+		 * Opens Main Navigation
+		 */
 		$scope.activeButton = function() {
-			$scope.isActive = !$scope.isActive;
-			$scope.$emit('navClicked', $scope.isActive);
+			$scope.navActive = true;
+			$scope.$emit('navClicked', $scope.navActive);
+		};
+
+		/**
+		 * Opens Sub Navigation and closes Main Navigation
+		 */
+		$scope.subActiveButton = function() {
+			$scope.navActive = false;
+			$scope.subNavActive = true;
 		};
 	}
 }
