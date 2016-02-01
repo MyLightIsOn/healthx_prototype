@@ -15,6 +15,7 @@
             <a ng-click="subActiveButton()" ui-sref="{{item.state}}">{{item.title}}</a>
         </li>
         <li ng-show="nav.isAdmin()" ui-sref-active="active"><a ui-sref="admin">Admin</a></li>
+        <li><a ng-click="closeMenu()" ui-sref="active">Close Menu</a></li>
       </ul>
 
       <!--<ul class="nav navbar-nav navbar-right">
@@ -31,6 +32,8 @@
           <a ui-sref="{{item.state}}">{{item.title}}</a>
         </li>
         <li ng-show="nav.isAdmin()" ui-sref-active="active"><a ui-sref="admin">Admin</a></li>
+        <li><a ng-click="menuBack()" ui-sref="active">Back</a></li>
+        <li><a ng-click="closeMenu()" ui-sref="active">Close Menu</a></li>
       </ul>
 
       <!--<ul class="nav navbar-nav navbar-right">

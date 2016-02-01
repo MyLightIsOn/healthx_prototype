@@ -19,10 +19,12 @@ class MainController {
 
     $scope.isActive = false;
 
-    $scope.$on("navClicked", function (event, args) {
-      if(args = true){
+    $scope.$on("navClicked", function() {
         $scope.isActive = true
-      }
+    });
+
+    $scope.$on("navClosed", function() {
+        $scope.isActive = false
     });
   }
 

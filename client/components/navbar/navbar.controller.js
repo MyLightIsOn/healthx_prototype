@@ -31,6 +31,23 @@ class NavbarController {
 			$scope.navActive = false;
 			$scope.subNavActive = true;
 		};
+
+		/**
+		 * Closes All Navigation
+		 */
+		$scope.closeMenu = function() {
+			$scope.navActive = false;
+			$scope.subNavActive = false;
+			$scope.$emit('navClosed', $scope.navActive);
+		};
+
+		/**
+		 * Closes Sub Navigation
+		 */
+		$scope.menuBack = function() {
+			$scope.navActive = true;
+			$scope.subNavActive = false;
+		};
 	}
 }
 
