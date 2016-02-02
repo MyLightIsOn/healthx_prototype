@@ -11,7 +11,7 @@
 					'state': 'main'
 				}, {
 					'title': 'Profile Info',
-					'state': 'main'
+					'state': 'profile'
 				}];
 
 				return menuItems
