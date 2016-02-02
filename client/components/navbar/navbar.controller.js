@@ -48,6 +48,10 @@ class NavbarController {
 			$scope.navActive = true;
 			$scope.subNavActive = false;
 		};
+
+		$scope.openPage = function(){
+			event.preventDefault()
+		}
 	}
 }
 

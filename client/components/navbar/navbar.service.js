@@ -11,7 +11,7 @@
 					'state': 'main'
 				}, {
 					'title': 'Profile Info',
-					'state': 'profile'
+					'state': 'main'
 				}];
 
 				return menuItems
@@ -23,7 +23,7 @@
 					'state': 'main'
 				}, {
 					'title': 'Profile Info2',
-					'state': 'main'
+					'state': 'main.profile'
 				}];
 
 				return menuItems

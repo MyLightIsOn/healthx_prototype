@@ -29,7 +29,7 @@
     <div collapse="nav.isCollapsed" class="navbar-collapse collapse subNavItemsContainer" id="navbar-sub" ng-class="{'sub-active': subNavActive}">
       <ul class="nav navbar-nav">
         <li ng-repeat="item in nav.subMenu" ui-sref-active="active">
-          <a ui-sref="{{item.state}}">{{item.title}}</a>
+          <a ng-click="openPage()" ui-sref="{{item.state}}">{{item.title}}</a>
         </li>
         <li ng-show="nav.isAdmin()" ui-sref-active="active"><a ui-sref="admin">Admin</a></li>
         <li><a ng-click="menuBack()">Back</a></li>
