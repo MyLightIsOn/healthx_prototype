@@ -23,7 +23,8 @@
 					'state': 'main'
 				}, {
 					'title': 'Profile Info2',
-					'state': 'main.profile'
+					'state': 'main.profile',
+					'pageName': 'profile'
 				}];
 
 				return menuItems

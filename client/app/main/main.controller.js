@@ -26,6 +26,13 @@ class MainController {
     $scope.$on("navClosed", function() {
         $scope.isActive = false
     });
+
+
+    $scope.pageActive = false;
+
+    /*$scope.pageActive = function(){
+      $scope.pageActive = true;
+    }*/
   }
 
   addThing() {

@@ -49,8 +49,11 @@ class NavbarController {
 			$scope.subNavActive = false;
 		};
 
-		$scope.openPage = function(){
-			event.preventDefault()
+		$scope.openPage = function($event){
+			event.preventDefault();
+			console.log($event.target.getAttribute("data-link-name"))
+			$scope.$parent.pageActive = true;
+			$scope.closeMenu();
 		}
 	}
 }
