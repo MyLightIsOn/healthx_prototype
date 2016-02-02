@@ -49,8 +49,13 @@ class NavbarController {
 			$scope.subNavActive = false;
 		};
 
+		/**
+		 * Opens Selected Page
+		 */
 		$scope.openPage = function($event){
 			event.preventDefault();
+
+			/*TODO*/
 			console.log($event.target.getAttribute("data-link-name"))
 			$scope.$parent.pageActive = true;
 			$scope.closeMenu();
