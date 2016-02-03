@@ -53,8 +53,8 @@ class NavbarController {
 		 * Opens Selected Page
 		 */
 		$scope.openPage = function($event){
-			event.preventDefault();
-			$scope.$emit('pageSelected', $event.target.getAttribute("data-link-name"))
+			/*event.preventDefault();*/
+			$scope.$emit('pageSelected', $event.target.getAttribute("data-link-name"));
 			$scope.closeMenu();
 		}
 	}
