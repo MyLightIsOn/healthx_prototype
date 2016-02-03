@@ -2,52 +2,58 @@
 
 (function() {
 
-class MainController {
+  class MainController {
 
-  constructor($http, $scope, socket) {
-    this.$http = $http;
-    this.awesomeThings = [];
+    constructor($http, $scope, socket) {
+      this.$http = $http;
+      this.awesomeThings = [];
 
-    $http.get('/api/things').then(response => {
-      this.awesomeThings = response.data;
-      socket.syncUpdates('thing', this.awesomeThings);
-    });
+      /*Sets all of the views to false*/
+      $scope.isActive = false;
+      $scope.pageActive = false;
 
-    $scope.$on('$destroy', function() {
-      socket.unsyncUpdates('thing');
-    });
+      $http.get('/api/things').then(response => {
+        this.awesomeThings = response.data;
+        socket.syncUpdates('thing', this.awesomeThings);
+      });
 
-    $scope.isActive = false;
+      $scope.$on('$destroy', function() {
+        socket.unsyncUpdates('thing');
+      });
 
-    $scope.$on("navClicked", function() {
+      $scope.$on("navClicked", function() {
         $scope.isActive = true
-    });
+      });
 
-    $scope.$on("navClosed", function() {
+      $scope.$on("navClosed", function() {
         $scope.isActive = false
-    });
+      });
 
+      $scope.$on("pageSelected", function(event, page) {
+        var pageToOpen = angular.element.find(page),
+            allPages = angular.element('#myPages').children();
 
-    $scope.pageActive = false;
+        for (var page of allPages) {
+          page.removeAttribute('class');
+        }
 
-    /*$scope.pageActive = function(){
-      $scope.pageActive = true;
-    }*/
-  }
+        pageToOpen[0].className = 'active'
+      });
+    }
 
-  addThing() {
-    if (this.newThing) {
-      this.$http.post('/api/things', { name: this.newThing });
-      this.newThing = '';
+    addThing() {
+      if (this.newThing) {
+        this.$http.post('/api/things', { name: this.newThing });
+        this.newThing = '';
+      }
+    }
+
+    deleteThing(thing) {
+      this.$http.delete('/api/things/' + thing._id);
     }
   }
 
-  deleteThing(thing) {
-    this.$http.delete('/api/things/' + thing._id);
-  }
-}
-
-angular.module('healthxApp')
-  .controller('MainController', MainController);
+  angular.module('healthxApp')
+      .controller('MainController', MainController);
 
 })();

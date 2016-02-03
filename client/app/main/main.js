@@ -9,7 +9,10 @@ angular.module('healthxApp')
         controller: 'MainController',
         controllerAs: 'main'
       })
-        .state('main.profile', { // added view mode
+        .state('main.profile', {
             url: "profile"
+        })
+        .state('main.settings', {
+            url: "settings"
         })
   });

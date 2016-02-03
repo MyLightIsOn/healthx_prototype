@@ -25,6 +25,10 @@
 					'title': 'Profile Info2',
 					'state': 'main.profile',
 					'pageName': 'profile'
+				},{
+					'title': 'Settings',
+					'state': 'main.settings',
+					'pageName': 'settings'
 				}];
 
 				return menuItems
