@@ -12,7 +12,7 @@
     <div collapse="nav.isCollapsed" class="navbar-collapse collapse navItemsContainer" id="navbar-main" ng-class="{'active': navActive}">
       <ul class="nav navbar-nav">
         <li ng-repeat="item in nav.menu" ui-sref-active="active">
-            <a ng-click="subActiveButton()">{{item.title}}</a>
+            <a ng-click="subActiveButton($event)" data-link-name="{{item.subNavName}}">{{item.title}}</a>
         </li>
         <li ng-show="nav.isAdmin()" ui-sref-active="active"><a ui-sref="admin">Admin</a></li>
         <li><a ng-click="closeMenu()">Close Menu</a></li>

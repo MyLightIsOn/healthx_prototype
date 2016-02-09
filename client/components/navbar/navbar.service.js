@@ -3,37 +3,61 @@
 (function() {
 
 	function MenuService() {
+
 		var Menus = {
 
-			mainMenu() {
-				var menuItems = [{
-					'title': 'Home',
-					'state': 'main'
-				}, {
-					'title': 'Profile Info',
-					'state': 'main'
-				}];
+			'mainMenu' : [
+				{
+					'title' : 'Home',
+					'state' : 'main',
+					'subNavName' : 'Home'
+				},
+				{
+					'title' : 'Profile Info',
+					'state' : 'main',
+					'subNavName' : 'Profile'
+				},
+				{
+					'title' : 'Settings',
+					'state' : 'main',
+					'subNavName' : 'Settings'
+				},
+			],
 
-				return menuItems
-			},
+			'subMenuProfile' : [
+				{
+					'title' : 'Profile',
+					'state' : 'main.profile'
+				},
+				{
+					'title' : 'Settings',
+					'state' : 'main.settings'
+				}
+			],
 
-			subMenu() {
-				var menuItems = [{
-					'title': 'Home2',
-					'state': 'main'
-				}, {
-					'title': 'Profile Info2',
-					'state': 'main.profile',
-					'pageName': 'profile'
-				},{
-					'title': 'Settings',
-					'state': 'main.settings',
-					'pageName': 'settings'
-				}];
+			'subMenuSettings' : [
+				{
+					'title' : 'Settings',
+					'state' : 'main.settings'
+				},
+				{
+					'title' : 'Settings',
+					'state' : 'main.settings'
+				},
+				{
+					'title' : 'Settings',
+					'state' : 'main.settings'
+				},
+				{
+					'title' : 'Settings',
+					'state' : 'main.settings'
+				},
+				{
+					'title' : 'Settings',
+					'state' : 'main.settings'
+				}
 
-				return menuItems
-			}
-
+			]
 		};
 
 		return Menus;

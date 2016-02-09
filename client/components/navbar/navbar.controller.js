@@ -10,8 +10,8 @@ class NavbarController {
 		this.isLoggedIn = Auth.isLoggedIn;
 		this.isAdmin = Auth.isAdmin;
 		this.getCurrentUser = Auth.getCurrentUser;
-		this.menu = MenuService.mainMenu();
-		this.subMenu = MenuService.subMenu();
+		this.menu = MenuService.mainMenu;
+		this.subMenu = MenuService.subMenuProfile;
 
 		$scope.navActive = false;
 
@@ -27,9 +27,18 @@ class NavbarController {
 		/**
 		 * Opens Sub Navigation and closes Main Navigation
 		 */
-		$scope.subActiveButton = function() {
+		$scope.subActiveButton = function($event) {
+			var targetName = $event.target.attributes[1].textContent;
+
+			$scope.createSubNav(targetName);
+
 			$scope.navActive = false;
 			$scope.subNavActive = true;
+		};
+
+		$scope.createSubNav = function(targetName){
+			var newSubMenu =  'subMenu' + targetName;
+			$scope.$parent.nav.subMenu = MenuService[newSubMenu];
 		};
 
 		/**
