@@ -29,15 +29,22 @@
         $scope.isActive = false
       });
 
+      /**
+       * Opens Selected Page
+       * Removes the active class from all pages then
+       * adds it only to the page selected
+       */
       $scope.$on("pageSelected", function(event, page) {
         var pageToOpen = angular.element.find(page),
             allPages = angular.element('#myPages').children();
 
-        for (var page of allPages) {
-          page.removeAttribute('class');
+        for (var pages of allPages) {
+          pages.removeAttribute('class');
+        }
+        if(pageToOpen[0] != undefined){
+          pageToOpen[0].className = 'active'
         }
 
-        pageToOpen[0].className = 'active'
       });
     }
 
