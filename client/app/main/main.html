@@ -1,18 +1,21 @@
 <navbar></navbar>
 <div id="main-container" ng-class="{'active': isActive}">
   <div id="main-overlay" ng-class="{'active': isActive}"></div>
-  <header class="hero-unit" id="banner">
+  <!--<header class="hero-unit" id="banner">
     <div class="container">
       <h1>'Allo, 'Allo!</h1>
       <p class="lead">Test Heroku Build</p>
       <img src="assets/images/yeoman.png" alt="I'm Yeoman">
     </div>
-  </header>
+  </header>-->
 
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h1 class="page-header">Features:</h1>
+
+        <canvas id="myChart"></canvas>
+
+      <!--  <h1 class="page-header">Features:</h1>
         <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in main.awesomeThings">
           <li><a href="#" tooltip="{{thing.info}}">{{thing.name}}<button type="button" class="close" ng-click="main.deleteThing(thing)">&times;</button></a></li>
         </ul>
@@ -27,7 +30,7 @@
         <button type="submit" class="btn btn-primary" ng-click="main.addThing()">Add New</button>
       </span>
       </p>
-    </form>
+    </form>-->
   </div>
 
   <!--The pages for the app go here-->
