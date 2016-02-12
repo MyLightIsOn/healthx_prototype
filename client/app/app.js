@@ -5,6 +5,7 @@ angular.module('healthxApp', [
   'healthxApp.admin',
   'healthxApp.constants',
   'healthxApp.navbar',
+  'healthxApp.mockdata',
   'ngCookies',
   'ngResource',
   'ngSanitize',
