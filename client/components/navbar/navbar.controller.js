@@ -30,7 +30,7 @@ class NavbarController {
 		$scope.subActiveButton = function($event) {
 			var targetName = $event.target.attributes[1].textContent;
 
-			if(targetName == 'Home'){
+			if(targetName === 'Home'){
 				$scope.closeMenu();
 			} else {
 				$scope.createSubNav(targetName);
@@ -66,9 +66,9 @@ class NavbarController {
 		 * Opens Selected Page
 		 */
 		$scope.openPage = function($event){
-			$scope.$emit('pageSelected', $event.target.getAttribute("data-link-name"));
+			$scope.$emit('pageSelected', $event.target.getAttribute('data-link-name'));
 			$scope.closeMenu();
-		}
+		};
 	}
 }
 

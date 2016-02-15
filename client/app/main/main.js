@@ -10,15 +10,15 @@ angular.module('healthxApp')
         controllerAs: 'main'
       })
         .state('main.profile', {
-            url: "profile",
+            url: 'profile',
             templateUrl: 'app/profile/profile.html',
             controller: 'ProfileCtrl',
             controllerAs: 'profile'
         })
         .state('main.settings', {
-            url: "settings",
+            url: 'settings',
             templateUrl: 'app/settings/settings.html',
             controller: 'SettingsCtrl',
             controllerAs: 'settings'
-        })
+        });
   });

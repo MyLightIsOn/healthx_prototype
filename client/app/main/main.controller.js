@@ -22,12 +22,12 @@
                 socket.unsyncUpdates('thing');
             });
 
-            $scope.$on("navClicked", function() {
-                $scope.isActive = true
+            $scope.$on('navClicked', function() {
+                $scope.isActive = true;
             });
 
-            $scope.$on("navClosed", function() {
-                $scope.isActive = false
+            $scope.$on('navClosed', function() {
+                $scope.isActive = false;
             });
 
             /**
@@ -35,15 +35,15 @@
              * Removes the active class from all pages then
              * adds it only to the page selected
              */
-            $scope.$on("pageSelected", function(event, page) {
+            $scope.$on('pageSelected', function(event, page) {
                 var pageToOpen = angular.element.find(page),
                     allPages = angular.element('#myPages').children();
 
                 for (var pages of allPages) {
                     pages.removeAttribute('class');
                 }
-                if(pageToOpen[0] != undefined){
-                    pageToOpen[0].className = 'active'
+                if(pageToOpen[0] !== undefined){
+                    pageToOpen[0].className = 'active';
                 }
             });
         }

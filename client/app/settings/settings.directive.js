@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('healthxApp')
     .directive('settings', () => ({
         templateUrl: 'app/settings/settings.html',
