@@ -46,12 +46,13 @@
                     pageToOpen[0].className = 'active'
                 }
             });
-
-            this.createChart();
         }
-        createChart(){
-            var ctx = document.getElementById('myChart').getContext('2d');
-            new Chart(ctx).Doughnut(this.healthChart.Health);
+        createChart(event){
+            var tabNumber = event.currentTarget.attributes[4].value,
+                data = 'Health' + tabNumber;
+
+            var ctx = document.getElementById('myChart' + tabNumber).getContext('2d');
+            new Chart(ctx).Doughnut(this.healthChart[data]);
         }
 
         addThing() {
