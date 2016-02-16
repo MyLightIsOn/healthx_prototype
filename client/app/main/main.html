@@ -13,19 +13,44 @@
     <div class="row">
       <div class="col-lg-12">
 
-          <uib-tabset>
-
-            <uib-tab heading="Static title" ng-click="main.createChart($event)" data-tab-index="1">
+        <tabset>
+          <!--<tab heading="Static title">Static content</tab>
+          <tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disable="tab.disabled">
+            {{tab.content}}
+          </tab>-->
+          <tab>
+            <tab-heading ng-click="main.createChart($event)" data-tab-index="1">
+              <!--<i class="glyphicon glyphicon-bell"></i>--> Health
+            </tab-heading>
               <canvas id="myChart1" class="main-pie-chart"></canvas>
-            </uib-tab>
+          </tab>
+          <tab>
+            <tab-heading ng-click="main.createChart($event)" data-tab-index="2">
+              <!--<i class="glyphicon glyphicon-bell"></i>--> Vision
+            </tab-heading>
+            <canvas id="myChart2" class="main-pie-chart"></canvas>
+          </tab>
+          <tab>
+            <tab-heading ng-click="main.createChart($event)" data-tab-index="3">
+              <!--<i class="glyphicon glyphicon-bell"></i>--> Dental
+            </tab-heading>
+            <canvas id="myChart3" class="main-pie-chart"></canvas>
+          </tab>
+        </tabset>
 
-            <uib-tab heading="Static title" ng-click="main.createChart($event)" data-tab-index="2">
+          <!--<tabset>
+
+            <tab heading="Static title" ng-click="main.createChart($event)" data-tab-index="1">
+              <canvas id="myChart1" class="main-pie-chart"></canvas>
+            </tab>
+
+            <tab heading="Static title" ng-click="main.createChart($event)" data-tab-index="2">
               <canvas id="myChart2" class="main-pie-chart"></canvas>
-            </uib-tab>
-            <uib-tab heading="Static title" ng-click="main.createChart($event)" data-tab-index="3">
+            </tab>
+            <tab heading="Static title" ng-click="main.createChart($event)" data-tab-index="3">
               <canvas id="myChart3" class="main-pie-chart"></canvas>
-            </uib-tab>
-          </uib-tabset>
+            </tab>
+          </tabset>-->
 
         <!--  <h1 class="page-header">Features:</h1>
           <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in main.awesomeThings">

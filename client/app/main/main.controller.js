@@ -48,11 +48,16 @@
             });
         }
         createChart(event){
-            var tabNumber = event.currentTarget.attributes[4].value,
-                data = 'Health' + tabNumber;
+            var tabNumber = event.currentTarget.attributes[1].value,
+                data = 'Health' + tabNumber,
+                scope = this;
 
-            var ctx = document.getElementById('myChart' + tabNumber).getContext('2d');
-            new Chart(ctx).Doughnut(this.healthChart[data]);
+            /*Chart.js bug throws error if chart is not visible on DOM. Slight delay on rendering fixes - This is so hacky, will fix later*/
+            setTimeout(function(){
+                var ctx = document.getElementById('myChart' + tabNumber).getContext('2d');
+                new Chart(ctx).Doughnut(scope.healthChart[data]);
+            }, 10)
+
         }
 
         addThing() {
