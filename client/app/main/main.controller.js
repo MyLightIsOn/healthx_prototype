@@ -50,20 +50,24 @@
             this.createChart(null, 1)
         }
         createChart(event, init){
-            var scope = this;
+            var scope = this,
+                mockdata = scope.healthChart,
+                options = mockdata.chartOptions[0];
 
             /*Checks to see if page is loading; if so then a new chart is made. Otherwise, the click event creats tabs*/
             setTimeout(function(){
                 if(event === null && init === 1){
                     var ctxInit = document.getElementById('myChart1').getContext('2d');
+                    ctxInit.canvas.height = 200;
 
-                    new Chart(ctxInit).Doughnut(scope.healthChart.Health1);
+                    new Chart(ctxInit).Doughnut(mockdata.Health1, options);
                 } else {
                     var tabNumber = event.currentTarget.attributes[1].value,
                         data = 'Health' + tabNumber,
                         ctx = document.getElementById('myChart' + tabNumber).getContext('2d');
 
-                    new Chart(ctx).Doughnut(scope.healthChart[data]);
+                    ctx.canvas.height = 200;
+                    new Chart(ctx).Doughnut(mockdata[data], options);
                 }
             }, 10);
         }

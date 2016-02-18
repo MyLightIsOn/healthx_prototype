@@ -67,6 +67,15 @@
                     highlight: '#FFC870',
                     label: 'Yellow'
                 }
+            ],
+
+            'chartOptions' : [
+                {
+                    animationEasing: "linear",
+                    animationSteps: 40,
+                    responsive: true,
+                    maintainAspectRatio: true
+                }
             ]
         };
 
