@@ -1,19 +1,20 @@
 <navbar></navbar>
 
 <div class="container">
-  <div class="row">
-    <div class="col-sm-12">
+  <div class="row full-height">
+    <!--<div class="col-sm-12">
       <h1>Login</h1>
       <p>Accounts are reset on server restart from <code>server/config/seed.js</code>. Default account is <code>test@example.com</code> / <code>test</code></p>
       <p>Admin account is <code>admin@example.com</code> / <code>admin</code></p>
-    </div>
-    <div class="col-sm-12">
+    </div>-->
+    <div class="col-sm-12 full-height">
       <form class="form" name="form" ng-submit="vm.login(form)" novalidate>
 
         <div class="form-group">
-          <label>Email</label>
+          <label>Username</label>
 
           <input type="email" name="email" class="form-control" ng-model="vm.user.email" required>
+          <input type="checkbox"><span class="remember-text">Remember username</span>
         </div>
 
         <div class="form-group">
@@ -45,5 +46,4 @@
       </form>
     </div>
   </div>
-  <hr>
 </div>

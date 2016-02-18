@@ -1,84 +1,46 @@
 <navbar></navbar>
 <div id="main-container" ng-class="{'active': isActive}">
-  <div id="main-overlay" ng-class="{'active': isActive}"></div>
-  <!--<header class="hero-unit" id="banner">
-    <div class="container">
-      <h1>'Allo, 'Allo!</h1>
-      <p class="lead">Test Heroku Build</p>
-      <img src="assets/images/yeoman.png" alt="I'm Yeoman">
-    </div>
-  </header>-->
+	<div id="main-overlay" ng-class="{'active': isActive}"></div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
 
-        <tabset>
-          <!--<tab heading="Static title">Static content</tab>
-          <tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disable="tab.disabled">
-            {{tab.content}}
-          </tab>-->
-          <tab>
-            <tab-heading ng-click="main.createChart($event)" data-tab-index="1">
-              <!--<i class="glyphicon glyphicon-bell"></i>--> Health
-            </tab-heading>
-              <canvas id="myChart1" class="main-pie-chart"></canvas>
-          </tab>
-          <tab>
-            <tab-heading ng-click="main.createChart($event)" data-tab-index="2">
-              <!--<i class="glyphicon glyphicon-bell"></i>--> Vision
-            </tab-heading>
-            <canvas id="myChart2" class="main-pie-chart"></canvas>
-          </tab>
-          <tab>
-            <tab-heading ng-click="main.createChart($event)" data-tab-index="3">
-              <!--<i class="glyphicon glyphicon-bell"></i>--> Dental
-            </tab-heading>
-            <canvas id="myChart3" class="main-pie-chart"></canvas>
-          </tab>
-        </tabset>
+				<tabset>
 
-          <!--<tabset>
+					<tab>
+						<tab-heading ng-click="main.createChart($event)" data-tab-index="1">
+							<i class="glyphicon glyphicon-eye-open"></i>
+							<span>Health</span>
+						</tab-heading>
+						<canvas id="myChart1" class="main-pie-chart"></canvas>
+					</tab>
+					<tab>
+						<tab-heading ng-click="main.createChart($event)" data-tab-index="2">
+							<i class="glyphicon glyphicon-eye-open"></i>
+							<span>Vision</span>
+						</tab-heading>
+						<canvas id="myChart2" class="main-pie-chart"></canvas>
+					</tab>
+					<tab>
+						<tab-heading ng-click="main.createChart($event)" data-tab-index="3">
+							<i class="glyphicon glyphicon-eye-open"></i>
+							<span>Dental</span>
+						</tab-heading>
+						<canvas id="myChart3" class="main-pie-chart"></canvas>
+					</tab>
+				</tabset>
 
-            <tab heading="Static title" ng-click="main.createChart($event)" data-tab-index="1">
-              <canvas id="myChart1" class="main-pie-chart"></canvas>
-            </tab>
+			</div>
 
-            <tab heading="Static title" ng-click="main.createChart($event)" data-tab-index="2">
-              <canvas id="myChart2" class="main-pie-chart"></canvas>
-            </tab>
-            <tab heading="Static title" ng-click="main.createChart($event)" data-tab-index="3">
-              <canvas id="myChart3" class="main-pie-chart"></canvas>
-            </tab>
-          </tabset>-->
-
-        <!--  <h1 class="page-header">Features:</h1>
-          <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in main.awesomeThings">
-            <li><a href="#" tooltip="{{thing.info}}">{{thing.name}}<button type="button" class="close" ng-click="main.deleteThing(thing)">&times;</button></a></li>
-          </ul>
-        </div>
-      </div>
-
-      <form class="thing-form">
-        <label>Syncs in realtime across clients</label>
-        <p class="input-group">
-          <input type="text" class="form-control" placeholder="Add a new thing here." ng-model="main.newThing">
-        <span class="input-group-btn">
-          <button type="submit" class="btn btn-primary" ng-click="main.addThing()">Add New</button>
-        </span>
-        </p>
-      </form>-->
-  </div>
-
-  <!--The pages for the app go here-->
-  <div id="myPages">
-    <profile class="not-active"></profile>
-    <settings class="not-active"></settings>
-  </div>
+			<!--The pages for the app go here-->
+			<div id="myPages">
+				<profile class="not-active"></profile>
+				<settings class="not-active"></settings>
+			</div>
 
 
-  <footer></footer>
+			<footer></footer>
+		</div>
+	</div>
 </div>
-
-
-
