@@ -46,18 +46,26 @@
                     pageToOpen[0].className = 'active';
                 }
             });
+
+            this.createChart(null, 1)
         }
-        createChart(event){
-            var tabNumber = event.currentTarget.attributes[1].value,
-                data = 'Health' + tabNumber,
-                scope = this;
+        createChart(event, init){
+            var scope = this;
 
-            /*Chart.js bug throws error if chart is not visible on DOM. Slight delay on rendering fixes - This is so hacky, will fix later*/
+            /*Checks to see if page is loading; if so then a new chart is made. Otherwise, the click event creats tabs*/
             setTimeout(function(){
-                var ctx = document.getElementById('myChart' + tabNumber).getContext('2d');
-                new Chart(ctx).Doughnut(scope.healthChart[data]);
-            }, 10)
+                if(event === null && init === 1){
+                    var ctxInit = document.getElementById('myChart1').getContext('2d');
 
+                    new Chart(ctxInit).Doughnut(scope.healthChart.Health1);
+                } else {
+                    var tabNumber = event.currentTarget.attributes[1].value,
+                        data = 'Health' + tabNumber,
+                        ctx = document.getElementById('myChart' + tabNumber).getContext('2d');
+
+                    new Chart(ctx).Doughnut(scope.healthChart[data]);
+                }
+            }, 10);
         }
 
         addThing() {
