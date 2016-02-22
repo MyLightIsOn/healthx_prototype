@@ -62,7 +62,7 @@
 
                     new Chart(ctxInit).Doughnut(mockdata.Health1, options);
                 } else {
-                    var tabNumber = event.currentTarget.attributes[1].value,
+                    var tabNumber = event.currentTarget.attributes[2].value,
                         data = 'Health' + tabNumber,
                         ctx = document.getElementById('myChart' + tabNumber).getContext('2d');
 

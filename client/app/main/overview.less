@@ -54,3 +54,29 @@
     #tab-gradient;
 }
 
+.main-tabs {
+    width: 33.3%;
+    height: 100%;
+    position: relative;
+    background-color: @main-tabs;
+
+    .tab-heading {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    a {
+        height: 100px;
+        border-radius: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+.main-tabs.active a{
+    background-color: @main-tabs-selected !important;
+}
