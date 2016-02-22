@@ -9,19 +9,19 @@
             'Health1' : [
                 {
                     value: 300,
-                    color:'#F7464A',
+                    color:'#27817f',
                     highlight: '#FF5A5E',
                     label: 'Red'
                 },
                 {
                     value: 50,
-                    color: '#46BFBD',
+                    color: '#2f5f5e',
                     highlight: '#5AD3D1',
                     label: 'Green'
                 },
                 {
                     value: 100,
-                    color: '#FDB45C',
+                    color: '#2aaeac',
                     highlight: '#FFC870',
                     label: 'Yellow'
                 }
@@ -30,19 +30,19 @@
             'Health2' : [
                 {
                     value: 50,
-                    color:'#F7464A',
+                    color:'#27817f',
                     highlight: '#FF5A5E',
                     label: 'Red'
                 },
                 {
                     value: 300,
-                    color: '#46BFBD',
+                    color: '#2f5f5e',
                     highlight: '#5AD3D1',
                     label: 'Green'
                 },
                 {
                     value: 100,
-                    color: '#FDB45C',
+                    color: '#2aaeac',
                     highlight: '#FFC870',
                     label: 'Yellow'
                 }
@@ -51,19 +51,19 @@
             'Health3' : [
                 {
                     value: 50,
-                    color:'#F7464A',
+                    color:'#27817f',
                     highlight: '#FF5A5E',
                     label: 'Red'
                 },
                 {
                     value: 100,
-                    color: '#46BFBD',
+                    color: '#2f5f5e',
                     highlight: '#5AD3D1',
                     label: 'Green'
                 },
                 {
                     value: 300,
-                    color: '#FDB45C',
+                    color: '#2aaeac',
                     highlight: '#FFC870',
                     label: 'Yellow'
                 }
@@ -74,7 +74,8 @@
                     animationEasing: "linear",
                     animationSteps: 40,
                     responsive: true,
-                    maintainAspectRatio: true
+                    maintainAspectRatio: true,
+                    segmentShowStroke : false
                 }
             ]
         };

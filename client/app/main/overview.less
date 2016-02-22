@@ -7,11 +7,6 @@
     margin-top: 30px;
 }
 
-.tab-image {
-    display: block;
-    width: 30px;
-}
-
 .overview-summary {
 
     table {
@@ -54,6 +49,14 @@
     #tab-gradient;
 }
 
+.tab-holder-gradient {
+    height: 10px;
+    margin-bottom: -10px;
+    position: relative;
+    z-index: 5;
+    #main-tab-gradient;
+}
+
 .main-tabs {
     width: 33.3%;
     height: 100%;
@@ -74,6 +77,20 @@
         border-radius: 0 !important;
         margin: 0 !important;
         padding: 0 !important;
+        color: @white;
+    }
+
+    .tab-image {
+        display: block;
+        width: 50%;
+        height: 58%;
+        margin: 8px auto 6px;
+    }
+
+    span {
+        font-weight: bold;
+        text-align: center;
+        display: block;
     }
 }
 
