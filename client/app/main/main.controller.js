@@ -37,14 +37,29 @@
              */
             $scope.$on('pageSelected', function(event, page) {
                 var pageToOpen = angular.element.find(page),
-                    allPages = angular.element('#myPages').children();
+                    allPages = angular.element('#myPages').children(),
+                    allPagesLength = allPages.length;
 
-                for (var pages of allPages) {
-                    pages.removeAttribute('class');
+                for(var i = allPagesLength; i--;){
+                    allPages[i].className = 'not-active';
                 }
+
                 if(pageToOpen[0] !== undefined){
                     pageToOpen[0].className = 'active';
                 }
+            });
+
+            /*Returns the view back to Home*/
+            $scope.$on('backHome', function(){
+                var allPages = angular.element('#myPages').children(),
+                    allPagesLength = allPages.length;
+
+                for(var i = allPagesLength; i--;){
+                    allPages[i].className = 'not-active';
+                }
+
+                $scope.isActive = false;
+                $scope.pageActive = false;
             });
 
             this.createChart(null, 1)

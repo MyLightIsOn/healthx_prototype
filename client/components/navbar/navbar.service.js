@@ -27,26 +27,31 @@
 			'subMenuProfile' : [
 				{
 					'title' : 'Profile',
-					'state' : 'main.profile'
+					'state' : 'main.profile',
+					'pageName' : 'profile'
 				},
 				{
 					'title' : 'Settings',
-					'state' : 'main.settings'
+					'state' : 'main.settings',
+					'pageName' : 'settings'
 				}
 			],
 
 			'subMenuSettings' : [
 				{
 					'title' : 'Settings',
-					'state' : 'main.settings'
+					'state' : 'main.settings',
+					'pageName' : 'settings'
 				},
 				{
 					'title' : 'Settings',
-					'state' : 'main.settings'
+					'state' : 'main.settings',
+					'pageName' : 'settings'
 				},
 				{
 					'title' : 'Settings',
-					'state' : 'main.settings'
+					'state' : 'main.settings',
+					'pageName' : 'settings'
 				},
 				{
 					'title' : 'Settings',

@@ -6,7 +6,7 @@ class NavbarController {
 	isCollapsed = false;
 	//end-non-standard
 
-	constructor(Auth, MenuService, $scope) {
+	constructor(Auth, MenuService, $scope, $state) {
 		this.isLoggedIn = Auth.isLoggedIn;
 		this.isAdmin = Auth.isAdmin;
 		this.getCurrentUser = Auth.getCurrentUser;
@@ -32,6 +32,7 @@ class NavbarController {
 
 			if(targetName === 'Home'){
 				$scope.closeMenu();
+				$scope.goHome();
 			} else {
 				$scope.createSubNav(targetName);
 			}
@@ -46,11 +47,20 @@ class NavbarController {
 		};
 
 		/**
+		 * Returns to Home
+		 */
+		$scope.goHome = function(){
+			$scope.$emit('backHome');
+			$state.go('main')
+		};
+
+		/**
 		 * Closes All Navigation
 		 */
 		$scope.closeMenu = function() {
 			$scope.navActive = false;
 			$scope.subNavActive = false;
+
 			$scope.$emit('navClosed', $scope.navActive);
 		};
 
