@@ -16,6 +16,7 @@
         </li>
         <li ng-show="nav.isAdmin()" ui-sref-active="active"><a ui-sref="admin">Admin</a></li>
         <li><a ng-click="closeMenu()">Close Menu</a></li>
+        <li ng-show="nav.isLoggedIn()"><a ui-sref="logout">Logout</a></li>
       </ul>
 
       <!--<ul class="nav navbar-nav navbar-right">
@@ -34,6 +35,7 @@
         <li ng-show="nav.isAdmin()" ui-sref-active="active"><a ui-sref="admin">Admin</a></li>
         <li><a ng-click="menuBack()">Back</a></li>
         <li><a ng-click="closeMenu()">Close Menu</a></li>
+        <li ng-show="nav.isLoggedIn()"><a ui-sref="logout">Logout</a></li>
       </ul>
 
       <!--<ul class="nav navbar-nav navbar-right">
