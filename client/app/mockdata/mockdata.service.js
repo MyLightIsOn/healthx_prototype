@@ -10,20 +10,20 @@
                 {
                     value: 300,
                     color:'#27817f',
-                    highlight: '#FF5A5E',
-                    label: 'Red'
+                    highlight: '#FFC870',
+                    label: 'Deductible'
                 },
                 {
                     value: 50,
                     color: '#2f5f5e',
-                    highlight: '#5AD3D1',
-                    label: 'Green'
+                    highlight: '#FFC870',
+                    label: 'Paid'
                 },
                 {
                     value: 100,
                     color: '#2aaeac',
                     highlight: '#FFC870',
-                    label: 'Yellow'
+                    label: 'Remaining'
                 }
             ],
 
@@ -31,20 +31,20 @@
                 {
                     value: 50,
                     color:'#27817f',
-                    highlight: '#FF5A5E',
-                    label: 'Red'
+                    highlight: '#FFC870',
+                    label: 'Deductible'
                 },
                 {
                     value: 300,
                     color: '#2f5f5e',
-                    highlight: '#5AD3D1',
-                    label: 'Green'
+                    highlight: '#FFC870',
+                    label: 'Paid'
                 },
                 {
                     value: 100,
                     color: '#2aaeac',
                     highlight: '#FFC870',
-                    label: 'Yellow'
+                    label: 'Remaining'
                 }
             ],
 
@@ -52,20 +52,20 @@
                 {
                     value: 50,
                     color:'#27817f',
-                    highlight: '#FF5A5E',
-                    label: 'Red'
+                    highlight: '#FFC870',
+                    label: 'Deductible'
                 },
                 {
                     value: 100,
                     color: '#2f5f5e',
-                    highlight: '#5AD3D1',
-                    label: 'Green'
+                    highlight: '#FFC870',
+                    label: 'Paid'
                 },
                 {
                     value: 300,
                     color: '#2aaeac',
                     highlight: '#FFC870',
-                    label: 'Yellow'
+                    label: 'Remaining'
                 }
             ],
 
