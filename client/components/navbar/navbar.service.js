@@ -18,10 +18,40 @@
 					'subNavName' : 'Profile'
 				},
 				{
+					'title' : 'ID Card',
+					'state' : 'main',
+					'subNavName' : 'ID'
+				},
+				{
+					'title' : 'Plan Overview',
+					'state' : 'main',
+					'subNavName' : 'Overview'
+				},
+				{
+					'title' : 'Payment Portal',
+					'state' : 'main',
+					'subNavName' : 'Payment'
+				},
+				{
+					'title' : 'Contact',
+					'state' : 'main',
+					'subNavName' : 'Contact'
+				},
+				{
+					'title' : 'Find',
+					'state' : 'main',
+					'subNavName' : 'Find'
+				},
+				{
 					'title' : 'Settings',
 					'state' : 'main',
 					'subNavName' : 'Settings'
 				},
+				{
+					'title' : 'Help',
+					'state' : 'main',
+					'subNavName' : 'Help'
+				}
 			],
 
 			'subMenuProfile' : [

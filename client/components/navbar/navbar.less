@@ -2,6 +2,7 @@
 
 .navItemsContainer {
     width: 80%;
+    min-height: 100%;
     margin: 0 !important;
 
     background-color: @white;
@@ -66,4 +67,16 @@
     background-color: @main-title-bar;
     position: fixed;
     width: 100%;
+}
+
+.navbar-nav {
+    margin: 0 -15px;
+
+    li {
+        border-bottom: 1px solid #000;
+
+        a {
+            padding: 13px 15px;
+        }
+    }
 }
