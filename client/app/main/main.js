@@ -17,5 +17,13 @@ angular.module('healthxApp')
             .state('main.dependents', {
                 url: 'dependents',
                 authenticate: true
+            })
+            .state('main.primaryid', {
+                url: 'primaryid',
+                authenticate: true
+            })
+            .state('main.dependentsid', {
+                url: 'dependentsid',
+                authenticate: true
             });
     });

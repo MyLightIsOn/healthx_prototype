@@ -65,6 +65,19 @@
 					'state' : 'main.dependents',
 					'pageName' : 'dependents'
 				}
+			],
+
+			'subMenuID' : [
+				{
+					'title' : 'Primary ID',
+					'state' : 'main.primaryid',
+					'pageName' : 'primaryid'
+				},
+				{
+					'title' : 'Dependents ID',
+					'state' : 'main.dependentsid',
+					'pageName' : 'dependentsid'
+				}
 			]
 		};
 
