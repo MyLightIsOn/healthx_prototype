@@ -77,3 +77,27 @@ body, html, .container, #app-container, #main-overlay, .full-height {
   padding: 12px;
   margin-top: 50px;
 }
+
+.page-view {
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: @main-background;
+  z-index: -100;
+
+  /*These styles are just for the content placeholders. Will be deleted later*/
+  padding-top: 60px;
+  p {
+    text-align: center;
+    color: @white;
+  }
+}
+
+.page-view.active {
+  z-index: 2;
+}

@@ -10,18 +10,12 @@ angular.module('healthxApp')
                 controllerAs: 'main',
                 authenticate: true
             })
-            .state('main.profile', {
-                url: 'profile',
-                templateUrl: 'app/profile/profile.html',
-                controller: 'ProfileCtrl',
-                controllerAs: 'profile',
+            .state('main.primary', {
+                url: 'primary',
                 authenticate: true
             })
-            .state('main.settings', {
-                url: 'settings',
-                templateUrl: 'app/settings/settings.html',
-                controller: 'SettingsCtrl',
-                controllerAs: 'settings',
+            .state('main.dependents', {
+                url: 'dependents',
                 authenticate: true
             });
     });

@@ -1,6 +1,6 @@
 'use strict';
 
 angular.module('healthxApp')
-  .controller('SettingsCtrl', function ($scope) {
+  .controller('DependentsCtrl', function ($scope) {
     $scope.message = 'Hello';
   });

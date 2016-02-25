@@ -41,11 +41,11 @@
                     allPagesLength = allPages.length;
 
                 for(var i = allPagesLength; i--;){
-                    allPages[i].className = 'not-active';
+                    allPages[i].className = 'not-active page-view';
                 }
 
                 if(pageToOpen[0] !== undefined){
-                    pageToOpen[0].className = 'active';
+                    pageToOpen[0].className = 'active page-view';
                 }
             });
 
@@ -55,7 +55,7 @@
                     allPagesLength = allPages.length;
 
                 for(var i = allPagesLength; i--;){
-                    allPages[i].className = 'not-active';
+                    allPages[i].className = 'not-active page-view';
                 }
 
                 $scope.isActive = false;

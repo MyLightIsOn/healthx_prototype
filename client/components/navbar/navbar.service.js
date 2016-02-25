@@ -56,42 +56,15 @@
 
 			'subMenuProfile' : [
 				{
-					'title' : 'Profile',
-					'state' : 'main.profile',
-					'pageName' : 'profile'
+					'title' : 'Primary Member Info',
+					'state' : 'main.primary',
+					'pageName' : 'primary'
 				},
 				{
-					'title' : 'Settings',
-					'state' : 'main.settings',
-					'pageName' : 'settings'
+					'title' : 'Dependents',
+					'state' : 'main.dependents',
+					'pageName' : 'dependents'
 				}
-			],
-
-			'subMenuSettings' : [
-				{
-					'title' : 'Settings',
-					'state' : 'main.settings',
-					'pageName' : 'settings'
-				},
-				{
-					'title' : 'Settings',
-					'state' : 'main.settings',
-					'pageName' : 'settings'
-				},
-				{
-					'title' : 'Settings',
-					'state' : 'main.settings',
-					'pageName' : 'settings'
-				},
-				{
-					'title' : 'Settings',
-					'state' : 'main.settings'
-				},
-				{
-					'title' : 'Settings',
-					'state' : 'main.settings'
-				}
-
 			]
 		};
 

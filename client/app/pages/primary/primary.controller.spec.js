@@ -1,16 +1,16 @@
 'use strict';
 
-describe('Controller: ProfileCtrl', function () {
+describe('Controller: PrimaryCtrl', function () {
 
   // load the controller's module
   beforeEach(module('healthxApp'));
 
-  var ProfileCtrl, scope;
+  var PrimaryCtrl, scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    ProfileCtrl = $controller('ProfileCtrl', {
+    PrimaryCtrl = $controller('PrimaryCtrl', {
       $scope: scope
     });
   }));
