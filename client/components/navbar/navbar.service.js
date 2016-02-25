@@ -78,6 +78,19 @@
 					'state' : 'main.dependentsid',
 					'pageName' : 'dependentsid'
 				}
+			],
+
+			'subMenuOverview' : [
+				{
+					'title' : 'Plan Info',
+					'state' : 'main.planinfo',
+					'pageName' : 'planinfo'
+				},
+				{
+					'title' : 'Dependents ID',
+					'state' : 'main.dependentsid',
+					'pageName' : 'dependentsid'
+				}
 			]
 		};
 

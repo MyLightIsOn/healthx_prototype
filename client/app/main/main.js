@@ -25,5 +25,9 @@ angular.module('healthxApp')
             .state('main.dependentsid', {
                 url: 'dependentsid',
                 authenticate: true
+            })
+            .state('main.planinfo', {
+                url: 'planinfo',
+                authenticate: true
             });
     });
