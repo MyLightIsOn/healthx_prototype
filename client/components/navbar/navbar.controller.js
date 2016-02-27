@@ -51,7 +51,7 @@ class NavbarController {
 		 */
 		$scope.goHome = function(){
 			$scope.$emit('backHome');
-			$state.go('main')
+			$state.go('main');
 		};
 
 		/**

@@ -62,7 +62,7 @@
                 $scope.pageActive = false;
             });
 
-            this.createChart(null, 1)
+            this.createChart(null, 1);
         }
         createChart(event, init){
             var scope = this,

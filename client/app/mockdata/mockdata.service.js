@@ -71,7 +71,7 @@
 
             'chartOptions' : [
                 {
-                    animationEasing: "linear",
+                    animationEasing: 'linear',
                     animationSteps: 40,
                     responsive: true,
                     maintainAspectRatio: true,
