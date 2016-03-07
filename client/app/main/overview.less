@@ -15,7 +15,7 @@
 
         td {
             padding: 5px 0;
-            color: @light-gray;
+            color: @white;
         }
 
         .legend-color {
@@ -100,12 +100,13 @@
 }
 
 .secondary-tabs {
-    background-color: @main-header;
+    background-color: @main-tabs;
     width: 33.3%;
     text-align: center;
 
     a {
         color: @light-gray;
+        border-radius: 0 !important;
     }
 }
 
@@ -139,9 +140,14 @@
 .claims-history-title {
     display: block;
     width: 100%;
-    color: @light-gray;
+    color: @white;
     font-size: 19px;
     text-align: center;
-    background-color: @main-header;
+    background-color: @main-tabs;
     padding: 9px 0;
+}
+
+.headings td {
+    text-decoration: underline;
+    padding-top: 30px !important;
 }
