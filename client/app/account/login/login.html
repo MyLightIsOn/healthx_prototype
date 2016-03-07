@@ -8,19 +8,19 @@
       <p>Admin account is <code>admin@example.com</code> / <code>admin</code></p>
     </div>-->
     <div class="col-sm-12 full-height login-container">
+       <!--logo is commented out until we get a better healthx.png-->
+      <img class="login-logo" src="../assets/images/healthx_logo.png">
       <form class="form" name="form" ng-submit="vm.login(form)" novalidate>
 
-        <div class="form-group">
-          <label>Username</label>
+        <div class="form-group first-login-form-group">
 
-          <input type="email" name="email" class="form-control" ng-model="vm.user.email" required>
+          <input placeholder="Username" type="email" name="email" class="form-control" ng-model="vm.user.email" required>
           <input type="checkbox"><span class="remember-text">Remember username</span>
         </div>
 
         <div class="form-group">
-          <label>Password</label>
 
-          <input type="password" name="password" class="form-control" ng-model="vm.user.password" required>
+          <input placeholder="Password" type="password" name="password" class="form-control" ng-model="vm.user.password" required>
         </div>
 
         <div class="form-group has-error">
@@ -35,12 +35,14 @@
         </div>
 
         <div>
-          <button class="btn btn-inverse btn-lg btn-login login-button" type="submit">
-            Login<i class="glyphicon glyphicon-arrow-right"></i>
+          <button class="btn btn-inverse btn-lg btn-login login-button button-long" type="submit">
+            Login
           </button>
           <!--<a class="btn btn-default btn-lg btn-register" ui-sref="signup">
             Register
           </a>-->
+
+          <span class="password-forget">Forgot Password?</span>
         </div>
 
       </form>

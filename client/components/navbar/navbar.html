@@ -1,4 +1,4 @@
-<div class="navbar navbar-default navbar-static-top main-title-bar" ng-controller="NavbarController">
+<div class="navbar navbar-default navbar-static-top main-title-bar" ng-controller="NavbarController" ng-show="nav.isLoggedIn()">
   <div class="nav-container">
     <div class="navbar-header">
       <button class="navbar-toggle pull-left nav-menu" type="button" ng-click="activeButton()" ng-show="nav.isLoggedIn()">

@@ -101,3 +101,39 @@ body, html, .container, #app-container, #main-overlay, .full-height {
 .page-view.active {
   z-index: 2;
 }
+
+input {
+  background-color: @input-field !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+  padding: 23px 10px !important;
+}
+
+input:focus {
+  background-color: @white !important;
+  color: @input-field !important;
+}
+
+::placeholder {
+  color: @placeholder-text !important;
+  text-align: center;
+}
+::-webkit-input-placeholder {
+  color: @placeholder-text !important;
+  text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: @placeholder-text !important;
+  text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: @placeholder-text !important;
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  color: @placeholder-text !important;
+  text-align: center;
+}
