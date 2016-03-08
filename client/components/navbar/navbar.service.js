@@ -62,7 +62,6 @@
 					'image' : '../assets/images/Help.png'
 				}
 			],
-
 			'subMenuProfile' : [
 				{
 					'title' : 'Primary Member Info',
@@ -75,7 +74,6 @@
 					'pageName' : 'dependents'
 				}
 			],
-
 			'subMenuID' : [
 				{
 					'title' : 'Primary ID',
@@ -88,7 +86,6 @@
 					'pageName' : 'dependentsid'
 				}
 			],
-
 			'subMenuOverview' : [
 				{
 					'title' : 'Plan Info',
@@ -97,12 +94,77 @@
 				},
 				{
 					'title' : 'Deductable',
-					'state' : 'main.dependentsid',
+					'state' : 'main.nocontent',
 					'pageName' : 'nocontent'
 				},
 				{
 					'title' : 'HSA/FSA',
-					'state' : 'main.dependentsid',
+					'state' : 'main.nocontent',
+					'pageName' : 'nocontent'
+				}
+			],
+			'subMenuPayment' : [
+				{
+					'title' : 'Pay A Claim',
+					'state' : 'main.nocontent',
+					'pageName' : 'nocontent'
+				},
+				{
+					'title' : 'Payment Profiles',
+					'state' : 'main.nocontent',
+					'pageName' : 'nocontent'
+				}
+			],
+			'subMenuContact' : [
+				{
+					'title' : 'My Contacts',
+					'state' : 'main.nocontent',
+					'pageName' : 'nocontent'
+				},
+				{
+					'title' : 'Messages',
+					'state' : 'main.nocontent',
+					'pageName' : 'nocontent'
+				}
+			],
+			'subMenuFind' : [
+				{
+					'title' : 'Find a Doctor',
+					'state' : 'main.nocontent',
+					'pageName' : 'nocontent'
+				},
+				{
+					'title' : 'Find a Pharmacy',
+					'state' : 'main.nocontent',
+					'pageName' : 'nocontent'
+				}
+			],
+			'subMenuSettings' : [
+				{
+					'title' : 'Privacy',
+					'state' : 'main.nocontent',
+					'pageName' : 'nocontent'
+				},
+				{
+					'title' : 'Security',
+					'state' : 'main.nocontent',
+					'pageName' : 'nocontent'
+				},
+				{
+					'title' : 'Notifications',
+					'state' : 'main.nocontent',
+					'pageName' : 'nocontent'
+				}
+			],
+			'subMenuHelp' : [
+				{
+					'title' : 'FAQ',
+					'state' : 'main.nocontent',
+					'pageName' : 'nocontent'
+				},
+				{
+					'title' : 'Glossary',
+					'state' : 'main.nocontent',
 					'pageName' : 'nocontent'
 				}
 			]

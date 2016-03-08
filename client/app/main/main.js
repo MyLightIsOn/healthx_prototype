@@ -29,5 +29,9 @@ angular.module('healthxApp')
             .state('main.planinfo', {
                 url: 'planinfo',
                 authenticate: true
+            })
+            .state('main.nocontent', {
+                url: 'nocontent',
+                authenticate: true
             });
     });
