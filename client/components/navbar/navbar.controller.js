@@ -23,7 +23,7 @@ class NavbarController {
 			/*$scope.activeButton = $scope.closeMenu;*/
 			if($event.currentTarget.classList.contains('active')){
 				$event.currentTarget.classList.remove('active');
-				$scope.closeMenu()
+				$scope.closeMenu();
 			} else {
 				$event.currentTarget.className += ' active';
 				menuButton = $event.currentTarget;

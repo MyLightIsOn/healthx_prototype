@@ -93,12 +93,17 @@
 				{
 					'title' : 'Plan Info',
 					'state' : 'main.planinfo',
-					'pageName' : 'planinfo'
+					'pageName' : 'nocontent'
 				},
 				{
-					'title' : 'Dependents ID',
+					'title' : 'Deductable',
 					'state' : 'main.dependentsid',
-					'pageName' : 'dependentsid'
+					'pageName' : 'nocontent'
+				},
+				{
+					'title' : 'HSA/FSA',
+					'state' : 'main.dependentsid',
+					'pageName' : 'nocontent'
 				}
 			]
 		};
