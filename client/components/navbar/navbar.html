@@ -11,8 +11,13 @@
       <a href="/" class="navbar-brand app-name">Healthx</a>
     </div>
     <div collapse="nav.isCollapsed" class="navbar-collapse collapse navItemsContainer" id="navbar-main" ng-class="{'active': navActive}">
-      <ul class="nav navbar-nav">
+      <div id="nav-profile">
+        <img src="../assets/images/ProfilePicture.png">
+        <span>{{ nav.getCurrentUser().name }}</span>
+      </div>
+      <ul class="nav navbar-nav primary">
         <li ng-repeat="item in nav.menu" ui-sref-active="active">
+          <img class="nav-images" src="{{item.image}}">
             <a ng-click="subActiveButton($event)" data-link-name="{{item.subNavName}}">{{item.title}}</a>
         </li>
         <li ng-show="nav.isAdmin()" ui-sref-active="active"><a ui-sref="admin">Admin</a></li>
@@ -28,7 +33,7 @@
       </ul>-->
     </div>
     <div collapse="nav.isCollapsed" class="navbar-collapse collapse subNavItemsContainer" id="navbar-sub" ng-class="{'sub-active': subNavActive}">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav secondary">
         <li ng-repeat="item in nav.subMenu" ui-sref-active="active">
           <a ng-click="openPage($event)" data-link-name="{{item.pageName}}" ui-sref="{{item.state}}">{{item.title}}</a>
         </li>

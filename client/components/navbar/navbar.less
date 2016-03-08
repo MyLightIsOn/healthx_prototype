@@ -4,8 +4,9 @@
     width: 80%;
     min-height: 100%;
     margin: 0 !important;
+    color: @white;
 
-    background-color: @white;
+    background-color: @main-background;
     position: fixed;
     right: 100%;
 
@@ -64,24 +65,41 @@
 }
 
 .main-title-bar {
-    background-color: @main-title-bar;
     position: fixed;
     width: 100%;
 }
 
 .navbar-nav {
     margin: 0 -15px;
+    background-color: @main-tabs;
 
     li {
         border-bottom: 1px solid #000;
+        color: @white;
+        position: relative;
 
         a {
             padding: 13px 15px;
+            color: @white !important;
         }
+
+        .nav-images {
+            display: block;
+            width: 25px;
+            position: absolute;
+            top: 7px;
+            left: 20px;
+        }
+    }
+}
+.navbar-nav.primary {
+    li {
+        padding-left: 51px;
     }
 }
 
 .navbar-default {
+    background-color: @main-background;
 
     .navbar-toggle {
         color: @white;
@@ -118,3 +136,14 @@
     background-color: transparent;
 }
 
+#nav-profile {
+    width: 40%;
+    margin: 0 auto 0;
+    text-align: center;
+    font-size: 18px;
+    background-color: @main-background;
+
+    img {
+        width: 100%;
+    }
+}

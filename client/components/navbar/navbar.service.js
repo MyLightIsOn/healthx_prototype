@@ -10,47 +10,56 @@
 				{
 					'title' : 'Home',
 					'state' : 'main',
-					'subNavName' : 'Home'
+					'subNavName' : 'Home',
+					'image' : '../assets/images/Home.png'
 				},
 				{
 					'title' : 'Profile Info',
 					'state' : 'main',
-					'subNavName' : 'Profile'
+					'subNavName' : 'Profile',
+					'image' : '../assets/images/Home.png'
 				},
 				{
 					'title' : 'ID Card',
 					'state' : 'main',
-					'subNavName' : 'ID'
+					'subNavName' : 'ID',
+					'image' : '../assets/images/IDCard.png'
 				},
 				{
 					'title' : 'Plan Overview',
 					'state' : 'main',
-					'subNavName' : 'Overview'
+					'subNavName' : 'Overview',
+					'image' : '../assets/images/PlanOverview.png'
 				},
 				{
 					'title' : 'Payment Portal',
 					'state' : 'main',
-					'subNavName' : 'Payment'
+					'subNavName' : 'Payment',
+					'image' : '../assets/images/Home.png'
 				},
 				{
 					'title' : 'Contact',
 					'state' : 'main',
-					'subNavName' : 'Contact'
+					'subNavName' : 'Contact',
+					'image' : '../assets/images/Contact.png'
 				},
 				{
 					'title' : 'Find',
 					'state' : 'main',
-					'subNavName' : 'Find'
+					'subNavName' : 'Find',
+					'image' : '../assets/images/Finder.png'
 				},
 				{
 					'title' : 'Settings',
 					'state' : 'main',
-					'subNavName' : 'Settings'
+					'subNavName' : 'Settings',
+					'image' : '../assets/images/Settings.png'
 				},
 				{
 					'title' : 'Help',
 					'state' : 'main',
-					'subNavName' : 'Help'
+					'subNavName' : 'Help',
+					'image' : '../assets/images/Help.png'
 				}
 			],
 
