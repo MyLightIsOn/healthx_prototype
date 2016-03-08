@@ -19,9 +19,18 @@ class NavbarController {
 		/**
 		 * Opens Main Navigation
 		 */
-		$scope.activeButton = function() {
-			$scope.navActive = true;
-			$scope.$emit('navClicked', $scope.navActive);
+		$scope.activeButton = function($event) {
+			/*$scope.activeButton = $scope.closeMenu;*/
+			if($event.currentTarget.classList.contains('active')){
+				console.log('Its open so close it!');
+				$event.currentTarget.classList.remove('active')
+				$scope.closeMenu()
+			} else {
+				console.log('Not open and adding class');
+				$event.currentTarget.className += ' active';
+				$scope.navActive = true;
+				$scope.$emit('navClicked', $scope.navActive);
+			}
 		};
 
 		/**

@@ -1,11 +1,12 @@
 <div class="navbar navbar-default navbar-static-top main-title-bar" ng-controller="NavbarController" ng-show="nav.isLoggedIn()">
   <div class="nav-container">
     <div class="navbar-header">
-      <button class="navbar-toggle pull-left nav-menu" type="button" ng-click="activeButton()" ng-show="nav.isLoggedIn()">
+      <button class="navbar-toggle pull-left nav-menu" type="button" ng-click="activeButton($event)" ng-show="nav.isLoggedIn()">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
+        <span class="close-menu-icon glyphicon glyphicon-remove-circle"></span>
       </button>
       <a href="/" class="navbar-brand app-name">Healthx</a>
     </div>
@@ -16,7 +17,6 @@
         </li>
         <li ng-show="nav.isAdmin()" ui-sref-active="active"><a ui-sref="admin">Admin</a></li>
         <li ng-show="nav.isLoggedIn()"><a ui-sref="logout">Logout</a></li>
-        <li><a ng-click="closeMenu()">Close Menu</a></li>
       </ul>
 
       <!--<ul class="nav navbar-nav navbar-right">
@@ -34,7 +34,6 @@
         </li>
         <li ng-show="nav.isAdmin()" ui-sref-active="active"><a ui-sref="admin">Admin</a></li>
         <li><a ng-click="menuBack()">Back</a></li>
-        <li><a ng-click="closeMenu()">Close Menu</a></li>
         <li ng-show="nav.isLoggedIn()"><a ui-sref="logout">Logout</a></li>
       </ul>
 

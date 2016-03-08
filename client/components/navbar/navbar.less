@@ -52,7 +52,7 @@
 
 .nav-menu {
     float: none;
-    position: absolute;
+    position: absolute !important;
     left: 10px;
 }
 
@@ -81,16 +81,40 @@
     }
 }
 
-.navbar-default .navbar-toggle {
-    color: @white;
-    border: 0;
-    position: relative;
-    left: 4px;
-    top: -1px;
+.navbar-default {
+
+    .navbar-toggle {
+        color: @white;
+        border: 0;
+        position: relative;
+        left: 4px;
+        top: -1px;
+
+        .glyphicon {
+            display: none;
+        }
+
+        .icon-bar {
+            background-color: @white;
+            width: 32px;
+            height: 4px;
+        }
+    }
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: @white;
-    width: 32px;
-    height: 4px;
+.navbar-default .navbar-toggle.active {
+    .icon-bar {
+        display: none !important;
+    }
+
+    .glyphicon {
+        display: block;
+        font-size: 30px;
+        top: -5px;
+    }
 }
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+
