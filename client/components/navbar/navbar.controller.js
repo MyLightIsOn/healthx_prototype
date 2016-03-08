@@ -68,8 +68,8 @@ class NavbarController {
 		$scope.closeMenu = function() {
 			$scope.navActive = false;
 			$scope.subNavActive = false;
-
 			$scope.$emit('navClosed', $scope.navActive);
+			menuButton.classList.remove('active');
 		};
 
 		/**
@@ -84,7 +84,6 @@ class NavbarController {
 		 * Opens Selected Page
 		 */
 		$scope.openPage = function($event){
-			menuButton.classList.remove('active');
 			$scope.$emit('pageSelected', $event.target.getAttribute('data-link-name'));
 			$scope.closeMenu();
 		};
