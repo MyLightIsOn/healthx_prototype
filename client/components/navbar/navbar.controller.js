@@ -14,7 +14,7 @@ class NavbarController {
 		this.subMenu = MenuService.subMenuProfile;
 
 		$scope.navActive = false;
-
+		let menuButton;
 
 		/**
 		 * Opens Main Navigation
@@ -22,12 +22,11 @@ class NavbarController {
 		$scope.activeButton = function($event) {
 			/*$scope.activeButton = $scope.closeMenu;*/
 			if($event.currentTarget.classList.contains('active')){
-				console.log('Its open so close it!');
-				$event.currentTarget.classList.remove('active')
+				$event.currentTarget.classList.remove('active');
 				$scope.closeMenu()
 			} else {
-				console.log('Not open and adding class');
 				$event.currentTarget.className += ' active';
+				menuButton = $event.currentTarget;
 				$scope.navActive = true;
 				$scope.$emit('navClicked', $scope.navActive);
 			}
@@ -85,6 +84,7 @@ class NavbarController {
 		 * Opens Selected Page
 		 */
 		$scope.openPage = function($event){
+			menuButton.classList.remove('active');
 			$scope.$emit('pageSelected', $event.target.getAttribute('data-link-name'));
 			$scope.closeMenu();
 		};
