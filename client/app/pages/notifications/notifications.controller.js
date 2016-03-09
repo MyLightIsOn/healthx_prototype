@@ -5,7 +5,6 @@ angular.module('healthxApp')
     $scope.message = 'Hello';
 
       $scope.toggleSwitch = function($event){
-          $event.currentTarget.classList.toggle('on')
-      }
-
+          $event.currentTarget.classList.toggle('on');
+      };
   });
