@@ -1,0 +1,83 @@
+#notifications-container{
+    padding: 0;
+
+    header {
+        background-color: @main-tabs;
+        padding: 10px 0;
+        color: @white;
+        padding-left: 15px;
+    }
+
+    .notify-setting-area {
+        min-height: 150px;
+        padding-top: 40px;
+    }
+
+    .on-off-container {
+        display: block;
+        height: 28px;
+        width: 70px;
+        border-radius: 50px;
+        background-color: @main-tabs;
+        position: absolute;
+        left: 60%;
+
+        .switch {
+            left: 5px;
+            top: 4px;
+        }
+
+        .switch-text:after {
+            content: 'OFF';
+            left: 78px;
+        }
+    }
+
+    .switch {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background-color: @white;
+        position: absolute;
+        transition: all 0.3s;
+    }
+
+    .switch-text:after {
+        font-weight: bold;
+        color: @white;
+        position: relative;
+        top: 4px;
+    }
+
+    .switch-text {
+        position: relative;
+    }
+
+    .switch-title {
+        position: absolute;
+        left: 15px;
+        color: white;
+        font-size: 16px;
+        top: 1px;
+    }
+
+    .on-off-container.on {
+        background-color: @button-long;
+
+        .switch {
+            left: 46px;
+        }
+
+        .switch-text:after {
+            content: 'ON';
+            left: 84px;
+        }
+    }
+}
+
+.switch-container {
+    position: relative;
+    height: 28px;
+    margin-bottom: 30px;
+}
