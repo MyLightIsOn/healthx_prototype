@@ -6,6 +6,6 @@ angular.module('healthxApp')
       .state('planinfo', {
         url: '/planinfo',
         templateUrl: 'app/pages/planinfo/planinfo.html',
-        controller: 'PlaninfoCtrl'
+        controller: 'PlanInfoCtrl'
       });
   });

@@ -90,7 +90,7 @@
 				{
 					'title' : 'Plan Info',
 					'state' : 'main.planinfo',
-					'pageName' : 'nocontent'
+					'pageName' : 'planinfo'
 				},
 				{
 					'title' : 'Deductable',

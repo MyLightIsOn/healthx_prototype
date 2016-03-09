@@ -4,6 +4,6 @@ angular.module('healthxApp')
     .directive('planinfo', () => ({
         templateUrl: 'app/pages/planinfo/planinfo.html',
         restrict: 'E',
-        controller: 'PlaninfoCtrl',
+        controller: 'PlanInfoCtrl',
         controllerAs: 'planinfo'
     }));
