@@ -34,6 +34,10 @@ angular.module('healthxApp')
                 url: 'notifications',
                 authenticate: true
             })
+            .state('main.findpharmacy', {
+                url: 'findpharmacy',
+                authenticate: true
+            })
             .state('main.nocontent', {
                 url: 'nocontent',
                 authenticate: true

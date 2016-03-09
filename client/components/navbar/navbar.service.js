@@ -135,8 +135,8 @@
 				},
 				{
 					'title' : 'Find a Pharmacy',
-					'state' : 'main.nocontent',
-					'pageName' : 'nocontent'
+					'state' : 'main.findpharmacy',
+					'pageName' : 'findpharmacy'
 				}
 			],
 			'subMenuSettings' : [
