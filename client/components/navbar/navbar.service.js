@@ -65,13 +65,13 @@
 			'subMenuProfile' : [
 				{
 					'title' : 'Primary Member Info',
-					'state' : 'main.primary',
-					'pageName' : 'primary'
+					'state' : 'main.nocontent',
+					'pageName' : 'nocontent'
 				},
 				{
 					'title' : 'Dependents',
-					'state' : 'main.dependents',
-					'pageName' : 'dependents'
+					'state' : 'main.nocontent',
+					'pageName' : 'nocontent'
 				}
 			],
 			'subMenuID' : [
@@ -82,8 +82,8 @@
 				},
 				{
 					'title' : 'Dependents ID',
-					'state' : 'main.dependentsid',
-					'pageName' : 'dependentsid'
+					'state' : 'main.nocontent',
+					'pageName' : 'nocontent'
 				}
 			],
 			'subMenuOverview' : [
