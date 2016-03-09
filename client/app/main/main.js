@@ -30,6 +30,10 @@ angular.module('healthxApp')
                 url: 'planinfo',
                 authenticate: true
             })
+            .state('main.notifications', {
+                url: 'notifications',
+                authenticate: true
+            })
             .state('main.nocontent', {
                 url: 'nocontent',
                 authenticate: true

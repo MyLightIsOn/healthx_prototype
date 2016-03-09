@@ -152,8 +152,8 @@
 				},
 				{
 					'title' : 'Notifications',
-					'state' : 'main.nocontent',
-					'pageName' : 'nocontent'
+					'state' : 'main.notifications',
+					'pageName' : 'notifications'
 				}
 			],
 			'subMenuHelp' : [
