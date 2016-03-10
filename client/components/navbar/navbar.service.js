@@ -82,8 +82,8 @@
 				},
 				{
 					'title' : 'Dependents ID',
-					'state' : 'main.nocontent',
-					'pageName' : 'nocontent'
+					'state' : 'main.dependentid',
+					'pageName' : 'dependentid'
 				}
 			],
 			'subMenuOverview' : [
