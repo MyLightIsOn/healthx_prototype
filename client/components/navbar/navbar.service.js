@@ -35,7 +35,7 @@
 					'title' : 'Payment Portal',
 					'state' : 'main',
 					'subNavName' : 'Payment',
-					'image' : '../assets/images/Home.png'
+					'image' : '../assets/images/PaymentPortal.png'
 				},
 				{
 					'title' : 'Contact',
@@ -88,7 +88,7 @@
 			],
 			'subMenuOverview' : [
 				{
-					'title' : 'Plan Info',
+					'title' : 'Explanation of Benefits',
 					'state' : 'main.planinfo',
 					'pageName' : 'planinfo'
 				},

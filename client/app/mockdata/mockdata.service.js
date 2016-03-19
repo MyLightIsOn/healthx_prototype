@@ -8,13 +8,13 @@
 
             'Health1' : [
                 {
-                    value: 100,
+                    value: 750,
                     color: '#2aaeac',
                     highlight: '#FFC870',
                     label: 'Paid'
                 },
                 {
-                    value: 25,
+                    value: 250,
                     color: '#2f5f5e',
                     highlight: '#FFC870',
                     label: 'Remaining'
@@ -23,13 +23,13 @@
 
             'Health2' : [
                 {
-                    value: 10,
+                    value: 100,
                     color: '#2aaeac',
                     highlight: '#FFC870',
                     label: 'Paid'
                 },
                 {
-                    value: 100,
+                    value: 900,
                     color: '#2f5f5e',
                     highlight: '#FFC870',
                     label: 'Remaining'
@@ -44,7 +44,7 @@
                     label: 'Paid'
                 },
                 {
-                    value: 100,
+                    value: 1000,
                     color: '#2f5f5e',
                     highlight: '#FFC870',
                     label: 'Remaining'
