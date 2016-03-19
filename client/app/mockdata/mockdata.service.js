@@ -8,20 +8,14 @@
 
             'Health1' : [
                 {
-                    value: 300,
-                    color:'#27817f',
-                    highlight: '#FFC870',
-                    label: 'Deductible'
-                },
-                {
-                    value: 50,
-                    color: '#2f5f5e',
+                    value: 100,
+                    color: '#2aaeac',
                     highlight: '#FFC870',
                     label: 'Paid'
                 },
                 {
-                    value: 100,
-                    color: '#2aaeac',
+                    value: 25,
+                    color: '#2f5f5e',
                     highlight: '#FFC870',
                     label: 'Remaining'
                 }
@@ -29,20 +23,14 @@
 
             'Health2' : [
                 {
-                    value: 50,
-                    color:'#27817f',
-                    highlight: '#FFC870',
-                    label: 'Deductible'
-                },
-                {
-                    value: 300,
-                    color: '#2f5f5e',
+                    value: 10,
+                    color: '#2aaeac',
                     highlight: '#FFC870',
                     label: 'Paid'
                 },
                 {
                     value: 100,
-                    color: '#2aaeac',
+                    color: '#2f5f5e',
                     highlight: '#FFC870',
                     label: 'Remaining'
                 }
@@ -50,20 +38,14 @@
 
             'Health3' : [
                 {
-                    value: 50,
-                    color:'#27817f',
-                    highlight: '#FFC870',
-                    label: 'Deductible'
-                },
-                {
-                    value: 100,
-                    color: '#2f5f5e',
+                    value: 0,
+                    color: '#2aaeac',
                     highlight: '#FFC870',
                     label: 'Paid'
                 },
                 {
-                    value: 300,
-                    color: '#2aaeac',
+                    value: 100,
+                    color: '#2f5f5e',
                     highlight: '#FFC870',
                     label: 'Remaining'
                 }
