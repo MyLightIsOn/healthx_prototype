@@ -44,7 +44,7 @@
 					'image' : '../assets/images/Contact.png'
 				},
 				{
-					'title' : 'Find',
+					'title' : 'Find A Service',
 					'state' : 'main',
 					'subNavName' : 'Find',
 					'image' : '../assets/images/Finder.png'
