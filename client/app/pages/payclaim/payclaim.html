@@ -1,3 +1,26 @@
-<div class="col-md-12">
-    <p>CLAIM!</p>
+<div class="col-md-12" ng-controller="PayClaimCtrl">
+    <br />
+    <span class="help-text">Search By Specialization, Location, or Provider</span>
+    <div class="form-group">
+        <input placeholder="Begin Search Here" name="search" class="form-control">
+    </div>
+    <button ng-click="selectClaim($event)" class="btn btn-inverse btn-lg btn-login login-button button-long" type="submit">
+        Search
+    </button>
+    <br />
+    <span class="help-text">- or -</span>
+
+    <span class="help-text">Search by Claim</span>
+    <select class="select-element" ng-model="claim.options" ng-change="selectClaim(claim.options)">
+        <option value="">Your Claims</option>
+        <option>ER Visit - 10.31.15</option>
+        <option>Doctor Visit - 1.1.16</option>
+        <option>Doctor Visit - 1.16.16</option>
+    </select>
+    <div id="claim-to-pay" ng-class="{'claim-active': foundClaim}">
+        <span class="claim-selected">ER Visit - 10.31.15</span>
+        <button class="btn btn-inverse btn-lg btn-login login-button button-long" type="submit">
+            Pay Now
+        </button>
+    </div>
 </div>

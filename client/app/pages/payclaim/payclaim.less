@@ -1,4 +1,21 @@
-.id-card-example{
-    width: 100%;
-    margin: 20px auto;
+#claim-to-pay {
+    border: 1px solid @white;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    display: none;
+
+    .claim-selected {
+        display: block;
+        width: 100%;
+        color: @white;
+    }
+
+    .button-long {
+        margin: 10px auto;
+    }
+}
+
+#claim-to-pay.claim-active {
+    display: block;
 }
