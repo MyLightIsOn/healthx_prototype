@@ -10,6 +10,25 @@
       </button>
       <a href="/" class="navbar-brand app-name">Healthx</a>
     </div>
+    <div id="gui-menu">
+      <ul>
+        <li>
+          <a ng-click="openPage($event)" data-link-name="nocontent" ui-sref="main.nocontent">
+            <img class="nav-images gui-first" src="../assets/images/PaymentPortal.png">
+          </a>
+        </li>
+        <li>
+          <a ng-click="openPage($event)" data-link-name="nocontent" ui-sref="main.nocontent">
+            <img class="nav-images gui-middle" src="../assets/images/Messages.png">
+          </a>
+        </li>
+        <li>
+          <a ng-click="openPage($event)" data-link-name="nocontent" ui-sref="main.nocontent">
+            <img class="nav-images gui-last" src="../assets/images/IDCard.png">
+          </a>
+        </li>
+      </ul>
+    </div>
     <div collapse="nav.isCollapsed" class="navbar-collapse collapse navItemsContainer" id="navbar-main" ng-class="{'active': navActive}">
       <div id="nav-profile">
         <img src="../assets/images/ProfilePicture.png">

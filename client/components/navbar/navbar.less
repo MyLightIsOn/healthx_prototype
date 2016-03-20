@@ -156,3 +156,51 @@
         margin-bottom: 5px;
     }
 }
+
+#gui-menu {
+    background: @main-header;
+    position: fixed;
+    bottom: 0;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        height: 40px;
+
+        li {
+            display: inline-block;
+            width: 32%;
+            height: 100%;
+            border-right: 1px solid #000;
+
+            a {
+                display: block;
+                width: 100%;
+            }
+
+            img {
+                width: 26%;
+                display: block;
+                margin: auto;
+            }
+        }
+
+        li:last-child {
+            border: 0;
+        }
+    }
+
+    .gui-first {
+        margin-top: 7px;
+    }
+
+    .gui-last {
+        width: 37%;
+        margin-top: 7px;
+    }
+
+    .gui-middle {
+        width: 30%;
+        margin-top: 8px;
+    }
+}
