@@ -17,7 +17,7 @@
 					'title' : 'Profile Info',
 					'state' : 'main',
 					'subNavName' : 'Profile',
-					'image' : '../assets/images/Home.png'
+					'image' : '../assets/images/ProfileInfo.png'
 				},
 				{
 					'title' : 'ID Card',

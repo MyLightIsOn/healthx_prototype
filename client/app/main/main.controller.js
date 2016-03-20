@@ -46,6 +46,7 @@
 
                 if(pageToOpen[0] !== undefined){
                     pageToOpen[0].className = 'active page-view';
+                    angular.element('#app-container')[0].scrollTop = 0;
                 }
             });
 
