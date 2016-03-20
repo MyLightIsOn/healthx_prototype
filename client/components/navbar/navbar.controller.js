@@ -87,6 +87,13 @@ class NavbarController {
 			$scope.$emit('pageSelected', $event.target.getAttribute('data-link-name'));
 			$scope.closeMenu();
 		};
+
+		/**
+		 * Opens Selected Page from GUI Menu
+		 */
+		$scope.openPageGUI = function($event){
+			$scope.$emit('pageSelected', $event.target.getAttribute('data-link-name'));
+		};
 	}
 }
 

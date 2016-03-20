@@ -38,6 +38,10 @@ angular.module('healthxApp')
                 url: 'findpharmacy',
                 authenticate: true
             })
+            .state('main.payclaim', {
+                url: 'payclaim',
+                authenticate: true
+            })
             .state('main.nocontent', {
                 url: 'nocontent',
                 authenticate: true

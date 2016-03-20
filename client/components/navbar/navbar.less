@@ -161,6 +161,7 @@
     background: @main-header;
     position: fixed;
     bottom: 0;
+    transition: 0.5s all;
 
     ul {
         margin: 0;
@@ -203,4 +204,8 @@
         width: 30%;
         margin-top: 8px;
     }
+}
+
+#gui-menu.active{
+    opacity: 0;
 }
