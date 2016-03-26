@@ -42,6 +42,10 @@ angular.module('healthxApp')
                 url: 'payclaim',
                 authenticate: true
             })
+            .state('main.contacts', {
+                url: 'contacts',
+                authenticate: true
+            })
             .state('main.nocontent', {
                 url: 'nocontent',
                 authenticate: true

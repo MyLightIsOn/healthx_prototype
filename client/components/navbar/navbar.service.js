@@ -118,8 +118,8 @@
 			'subMenuContact' : [
 				{
 					'title' : 'My Contacts',
-					'state' : 'main.nocontent',
-					'pageName' : 'nocontent'
+					'state' : 'main.contacts',
+					'pageName' : 'contacts'
 				},
 				{
 					'title' : 'Messages',
