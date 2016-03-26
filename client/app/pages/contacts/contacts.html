@@ -1,3 +1,151 @@
 <div class="col-md-12">
-   Contact page
+   <br /><br />
+   <div class="form-group">
+      <input placeholder="Search Contacts" name="search" class="form-control">
+   </div>
+   <br />
+   <ul id="contact-list">
+      <li class="contact-item" ng-click="selectContact($event)" data-link-name="cvs">
+         <img class="nav-images" src="../assets/images/ProfileInfo.png">
+         <span>CVS</span>
+         <span>My Pharmacy</span>
+      </li>
+      <li class="contact-item" ng-click="selectContact($event)" data-link-name="hauser">
+         <img class="nav-images" src="../assets/images/ProfileInfo.png">
+         <span>Dr. Hauser</span>
+         <span>My Doctor</span>
+      </li>
+      <li class="contact-item" ng-click="selectContact($event)" data-link-name="morgan">
+         <img class="nav-images" src="../assets/images/ProfileInfo.png">
+         <span>Dr. Morgan</span>
+         <span>My Kid's Pediatrician</span>
+      </li>
+      <li class="contact-item" ng-click="selectContact($event)" data-link-name="anthem">
+         <img class="nav-images" src="../assets/images/ProfileInfo.png">
+         <span>Anthem</span>
+         <span>Customer Service</span>
+      </li>
+      <li class="contact-item" ng-click="selectContact($event)" data-link-name="duke">
+         <img class="nav-images" src="../assets/images/ProfileInfo.png">
+         <span>Dr. Duke</span>
+         <span>Opthamologist</span>
+      </li>
+   </ul>
+
+   <div id="hauser" class="contact-detail">
+      <img src="../assets/images/contacts_map.jpg">
+      <ul>
+         <li class="contact-item">
+            <img class="nav-images" src="../assets/images/ProfileInfo.png">
+            <span>317-555-6789</span>
+         </li>
+         <li class="contact-item">
+            <img class="nav-images" src="../assets/images/Messages.png">
+            <span>drhauser@riley.com</span>
+         </li>
+         <li class="contact-item">
+            <img class="nav-images" src="../assets/images/Location.png">
+            <span>6789 Riley Hospital</span>
+            <span>Indianapolis, IN 46205</span>
+         </li>
+         <li class="contact-item">
+            <img class="nav-images" src="../assets/images/Chat.png">
+            <span>Ask about generic Rx</span>
+         </li>
+      </ul>
+      <button class="btn btn-inverse btn-lg btn-login login-button button-long" type="submit" ng-click="closeContact()">
+         Back to Contacts
+      </button>
+   </div>
+
+   <div id="morgan" class="contact-detail">
+      <img src="../assets/images/contacts_map.jpg">
+      <ul>
+         <li class="contact-item">
+            <img class="nav-images" src="../assets/images/ProfileInfo.png">
+            <span>317-555-6789</span>
+         </li>
+         <li class="contact-item">
+            <img class="nav-images" src="../assets/images/Messages.png">
+            <span>drmorgan@riley.com</span>
+         </li>
+         <li class="contact-item">
+            <img class="nav-images" src="../assets/images/Location.png">
+            <span>6789 Riley Hospital</span>
+            <span>Indianapolis, IN 46205</span>
+         </li>
+         <li class="contact-item">
+            <img class="nav-images" src="../assets/images/Chat.png">
+            <span>Ask about generic Rx</span>
+         </li>
+      </ul>
+      <button class="btn btn-inverse btn-lg btn-login login-button button-long" type="submit" ng-click="closeContact()">
+         Back to Contacts
+      </button>
+   </div>
+
+   <div id="cvs" class="contact-detail">
+      <img src="../assets/images/cvs_map.jpg">
+      <ul>
+         <li class="contact-item">
+            <img class="nav-images" src="../assets/images/ProfileInfo.png">
+            <span>317-555-6789</span>
+         </li>
+         <li class="contact-item">
+            <img class="nav-images" src="../assets/images/Messages.png">
+            <span>cvs@pharmacy.com</span>
+         </li>
+         <li class="contact-item">
+            <img class="nav-images" src="../assets/images/Location.png">
+            <span>3489 North Oak Street</span>
+            <span>Indianapolis, IN 46205</span>
+         </li>
+      </ul>
+      <button class="btn btn-inverse btn-lg btn-login login-button button-long" type="submit" ng-click="closeContact()">
+         Back to Contacts
+      </button>
+   </div>
+
+   <div id="anthem" class="contact-detail">
+      <ul>
+         <br />
+         <li class="contact-item">
+            <img class="nav-images" src="../assets/images/ProfileInfo.png">
+            <span>1-800-835-5520</span>
+         </li>
+         <li class="contact-item">
+            <img class="nav-images" src="../assets/images/Messages.png">
+            <span>membersupport@anthem.com</span>
+         </li>
+         <li class="contact-item">
+            <img class="nav-images" src="../assets/images/Location.png">
+            <span>Anthem Blue Cross<br />& Blue Shield of Indiana</span>
+            <span>P.O. Box 10557</span>
+            <span>Atlanta, VA 30348</span>
+         </li>
+         <li class="contact-item">
+            <img class="nav-images" src="../assets/images/Website.png">
+            <span>Go to anthem.com</span>
+         </li>
+         <li class="contact-item">
+            <img class="nav-images" src="../assets/images/Contact.png">
+            <span>Other Important Numbers</span>
+         </li>
+         <li class="contact-item">
+            <span>FEP BlueVision</span>
+            <span>1-888-550-2583</span>
+         </li>
+         <li class="contact-item">
+            <span>Davis Vision Discount Program</span>
+            <span>1-888-550-2583</span>
+         </li>
+         <li class="contact-item">
+            <span>Blue Health Connection</span>
+            <span>1-888-550-2583</span>
+         </li>
+      </ul>
+      <button class="btn btn-inverse btn-lg btn-login login-button button-long" type="submit" ng-click="closeContact()">
+         Back to Contacts
+      </button>
+   </div>
 </div>
